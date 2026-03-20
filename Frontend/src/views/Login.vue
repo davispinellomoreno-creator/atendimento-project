@@ -1,14 +1,18 @@
+<script setup lang="ts">
+import { ref } from "vue"
+import { login } from "@/services/authService"
+
+const email = ref("")
+const password = ref("")
+
 const handleLogin = async () => {
-  try {
-    const res = await login({
-      email: email.value,
-      password: password.value
-    });
+  const res = await login({
+    email: email.value,
+    password: password.value
+  })
 
-    localStorage.setItem("token", res.data.token);
+  localStorage.setItem("token", res.data.token)
 
-    router.push("/dashboard");
-  } catch (error) {
-    alert("Email ou senha inválidos ❌");
-  }
-};
+  alert("Login feito ")
+}
+</script>
