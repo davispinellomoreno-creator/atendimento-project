@@ -2,7 +2,7 @@ import express from "express"
 import dotenv from "dotenv"
 import { connectDB } from "./config/db"
 
-dotenv.config({ path: "backend.env" })
+dotenv.config()
 
 console.log("URI:", process.env.MONGO_URI)
 
