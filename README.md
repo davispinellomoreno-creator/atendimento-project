@@ -130,6 +130,7 @@ Estruturação de uma aplicação escalável
 Durante o desenvolvimento, o sistema foi implementado com sucesso e todas as funcionalidades foram criadas conforme o planejado. No entanto, houve uma limitação técnica na etapa de integração com o banco de dados, onde a conexão com o MongoDB não foi totalmente estabelecida, impedindo o armazenamento persistente das informações.
 Mesmo assim, o projeto cumpriu seu objetivo principal de demonstrar o funcionamento da arquitetura e das tecnologias utilizadas.
 
+site do deploy: https://davispinellomoreno-creator.github.io/atendimento-project/
 
 ```sh
 npm run build
